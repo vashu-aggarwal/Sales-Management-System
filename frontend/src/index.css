@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Global scrollbar styling: thin and subtle so it doesn't hide content */
+html {
+	scrollbar-width: thin; /* Firefox */
+	scrollbar-color: rgba(100,116,139,0.35) transparent;
+}
+
+/* Make sizing calculations predictable to avoid overflow due to padding/margin */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+html::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+}
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+	background-color: rgba(100,116,139,0.35);
+	border-radius: 9999px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+html::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(100,116,139,0.55);
+}
+
+/* Give the table scroll wrapper a small right padding so the last column
+   isn't covered by the vertical scrollbar. Keeps other overflow wrappers unchanged. */
+.table-scroll {
+  padding-right: 12px;
+}/* Keep horizontal-scroll class in case used elsewhere for table scrollers */
+.horizontal-scroll {
+	-webkit-overflow-scrolling: touch;
+}
