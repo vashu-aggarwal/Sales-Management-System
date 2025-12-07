@@ -59,11 +59,3 @@ Sorting:
 - Retains search, filters, and sorting selections across pages
 
 ---
-
-## 🚀 Setup Instructions
-
-### 🔧 Backend Setup
-```sh
-cd backend
-npm install
-npm start
