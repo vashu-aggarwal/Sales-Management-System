@@ -11,8 +11,8 @@ It enables efficient handling of structured sales data with **full-text search, 
 |-------|------------|
 | Frontend | React, React Router, Axios |
 | Backend | Node.js, Express.js |
-| Database | PostgreSQL |
-| Deployment | Backend - Render • Database - Railway • Frontend - Render |
+| Database | MySQL |
+| Deployment | Backend - Render • Database - Railway • Frontend - Vercel |
 | Others | REST APIs, CORS, Environment Variables |
 
 ---
