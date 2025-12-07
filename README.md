@@ -59,3 +59,49 @@ Sorting:
 - Retains search, filters, and sorting selections across pages
 
 ---
+
+## Folder Structure
+
+```
+Retail Sales Management System/
+├── backend/                          # Backend application root
+│   ├── package.json                  # Backend dependencies
+│   └── src/
+│       ├── index.js                  # Server entry point
+│       ├── controllers/              # Business logic layer
+│       │   ├── filterController.js   # Filtering logic
+│       │   ├── searchController.js   # Search logic
+│       │   ├── sortController.js     # Sorting logic
+│       │   └── transactionController.js  # Transaction CRUD
+│       ├── routes/
+│       │   └── transactions.js       # API endpoints
+│       └── utils/                    # Utility layer
+│           ├── db.js                 # Database connection
+│           └── queryHelper.js        # Query building
+├── frontend/                         # Frontend application root
+│   ├── package.json                  # Frontend dependencies
+│   ├── index.html                    # HTML template
+│   ├── main.jsx                      # React entry point
+│   ├── App.jsx                       # Root component
+│   ├── index.css                     # Global styles
+│   ├── vite.config.js                # Vite configuration
+│   ├── postcss.config.js             # PostCSS configuration
+│   ├── eslint.config.js              # ESLint configuration
+│   ├── public/                       # Static assets
+│   └── src/
+│       ├── components/               # Reusable UI components
+│       │   ├── FilterDropdown.jsx    # Filter dropdown
+│       │   ├── FilterModal.jsx       # Advanced filter modal
+│       │   ├── FiltersPanel.jsx      # Filter container
+│       │   ├── Pagination.jsx        # Pagination controls
+│       │   ├── Sidebar.jsx           # Navigation sidebar
+│       │   ├── SummaryCard.jsx       # Summary display
+│       │   ├── Topbar.jsx            # Header/topbar
+│       │   └── TransactionsTable.jsx # Transaction table
+│       ├── pages/                    # Page components
+│       │   └── Dashboard.jsx         # Main dashboard page
+│       └── utils/                    # Utility functions
+│           └── dataUtils.js          # Data helpers & API calls
+└── docs/
+    └── architecture.md               # This file
+```
