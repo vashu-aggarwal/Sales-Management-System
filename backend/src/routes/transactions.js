@@ -3,7 +3,7 @@ const router = express.Router();
 const transactionController = require("../controllers/transactionController");
 const searchController = require("../controllers/searchController");
 const filterController = require("../controllers/filterController");
-const sortController = require("../controllers/SortController");
+const sortController = require("../controllers/sortController");
 
 
 // GET /api/transaction/search?q=query
