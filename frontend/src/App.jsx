@@ -248,9 +248,9 @@ export default function App() {
   useEffect(() => setPage(1), [filters, sortBy]);
 
   return (
-    <div className="min-h-screen flex bg-gray-50 text-sm overflow-x-hidden">
+    <div className="min-h-screen flex bg-gray-50 text-sm">
       <Sidebar />
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-auto">
         <Topbar
           data={rows}
           filters={filters}
@@ -261,7 +261,7 @@ export default function App() {
           onSortChange={(s) => setSortBy(s)}
         />
 
-        <div className="bg-white p-4 m-2 md:m-3 lg:m-4 rounded shadow overflow-hidden">
+        <div className="bg-white p-2 sm:p-4 m-2 md:m-3 lg:m-4 rounded shadow overflow-x-auto md:overflow-x-hidden">
           {error && (
             <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded text-red-700 text-sm">
               <strong>Error:</strong> {error}
